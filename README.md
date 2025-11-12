@@ -26,23 +26,6 @@ A simple web-based system for searching available seats in the library.
    ![Result Screenshot](https://github.com/user-attachments/assets/e7c9888d-0603-40b6-af50-74652fcd3337)
 
 ---
-## 🧩 Project Structure
-
-```
-LibrarySeatSearch/
-│
-├── startup.py              # Main entry point
-├── requirements.txt        # Python dependencies
-├── app/                    # Core application logic
-│   ├── __init__.py
-│   ├── seat_finder.py      # Seat search functions
-│   └── ui.py               # Web UI built with Gradio
-│
-└── README.md               # Project documentation
-```
-
----
-
 ## 🧠 Tech Stack
 
 - **Python 3.10+**
