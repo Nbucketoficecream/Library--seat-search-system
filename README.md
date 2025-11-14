@@ -1,28 +1,60 @@
 # 📚 Library Seat Search System
 
-A simple web-based system for searching available seats in the library.
+A simple web-based application for checking available seats in the
+library.
 
-## 🚀 Installation
+------------------------------------------------------------------------
 
-1. Install required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Start the application:
-   ```bash
-   python startup.py
-   ```
+## 🚀 Installation Methods
+
+You can install and run this project in **two different ways**:
+
+------------------------------------------------------------------------
+
+# 1️⃣ Local Installation
+
+### Step 1. Install Dependencies
+
+``` bash
+pip install -r requirements.txt
+```
+
+### Step 2. Start the Application
+
+``` bash
+python startup.py
+```
+
+Visit:
+
+    http://localhost:7860
+
+------------------------------------------------------------------------
+
+# 2️⃣ Docker Installation
+
+### Step 1. Pull the Docker Image
+
+``` bash
+docker pull ncupoficecream/library-seat-search:1.1
+```
+
+### Step 2. Run the Container
+
+``` bash
+docker run --rm -p your_port:7860 ncupoficecream/library-seat-search:1.1
+```
+
+Visit:
+
+    http://localhost:your_port
 
 ## 💻 Usage
 
-1. Open your browser and go to:
-   ```
-   http://127.0.0.1:7860
-   ```
-2. Select an option and click the **Submit** button.  
+1. Select an option and click the **Submit** button.  
    ![Interface Screenshot](https://github.com/user-attachments/assets/a107cfc7-ca25-4653-ad10-739892de7990)
 
-3. The system will display the search results:  
+2. The system will display the search results:  
    ![Result Screenshot](https://github.com/user-attachments/assets/e7c9888d-0603-40b6-af50-74652fcd3337)
 
 ---
