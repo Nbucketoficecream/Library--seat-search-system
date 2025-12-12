@@ -36,13 +36,13 @@ Visit:
 ### Step 1. Pull the Docker Image
 
 ``` bash
-docker pull ncupoficecream/library-seat-search:1.1
+docker pull ncupoficecream/library-seat-search:latest
 ```
 
 ### Step 2. Run the Container
 
 ``` bash
-docker run --rm -p your_port:7860 ncupoficecream/library-seat-search:1.1
+docker run --rm -p your_port:7860 ncupoficecream/library-seat-search:latest
 ```
 
 Visit:
