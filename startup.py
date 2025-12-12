@@ -3,11 +3,21 @@ import getting_api as ga
 import pandas as pd
 
 def search(branch):
-   raw_data=ga.data_classiy(branch)
-   data = [{"樓層": c["floorName"], "區域名稱": c["areaName"], "總座位": c["totalCount"], "可用座位": c["freeCount"]} for c in raw_data]
-   return pd.DataFrame(data)
+    raw_data = ga.data_classiy(branch)
+    data = [
+        {
+            "樓層": c["floorName"],
+            "區域名稱": c["areaName"],
+            "總座位": c["totalCount"],
+            "可用座位": c["freeCount"],
+        }
+        for c in raw_data
+    ]
+    return pd.DataFrame(data)
+
+
 demo = gr.Interface(
-    fn=search,
+   fn=search,
    inputs=[
         gr.Dropdown(
             ["總館", "稻香分館", "廣慈分館", "文山分館", "西湖分館"],
