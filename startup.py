@@ -35,6 +35,7 @@ demo = gr.Interface(
     ),
     title="圖書座位查詢系統",
     allow_flagging="never"
+    concurrency_limit=50
 )
 demo.launch(server_name="0.0.0.0", server_port=7860)
 
