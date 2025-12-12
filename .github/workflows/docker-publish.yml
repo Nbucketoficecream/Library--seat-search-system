@@ -21,10 +21,18 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Login to Docker Hub
+        shell: bash
         run: |
-          echo "${{ secrets.DOCKERHUB_AUTH }}" | docker login \
-            -u $(echo "${{ secrets.DOCKERHUB_AUTH }}" | cut -d: -f1) \
-            --password-stdin
+          AUTH="${{ secrets.DOCKERHUB_AUTH }}"
+          if [ -z "$AUTH" ]; then
+            echo "DOCKERHUB_AUTH is empty. Please set it in GitHub Secrets."
+            exit 1
+          fi
+
+          USER="${AUTH%%:*}"
+          PASS="${AUTH#*:}"
+
+          echo "$PASS" | docker login -u "$USER" --password-stdin
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
