@@ -34,7 +34,7 @@ demo = gr.Interface(
         headers=["樓層", "區域名稱", "總座位", "可用座位"], 
     ),
     title="圖書座位查詢系統",
-    allow_flagging="never"
+    flagging_mode="never",
     concurrency_limit=50
 )
 demo.launch(server_name="0.0.0.0", server_port=7860)
