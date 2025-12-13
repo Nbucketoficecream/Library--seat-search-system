@@ -50,7 +50,7 @@ Visit:
     http://localhost:your_port
 
 ## 💻 Usage
-
+![Untitled ‑ Made with FlexClip](https://github.com/user-attachments/assets/0b8b1a49-6ac4-4232-8c90-264efe3c6098)
 1. Select an option and click the **Submit** button.  
    ![Interface Screenshot](https://github.com/user-attachments/assets/a107cfc7-ca25-4653-ad10-739892de7990)
 
